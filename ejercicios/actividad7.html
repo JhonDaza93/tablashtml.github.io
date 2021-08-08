@@ -1,0 +1,76 @@
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Formulario de Viaje</title>
+    </head>
+    <body>
+        <form action="http://www.MandalemechaTour.com/Viaje" method="POST">
+        <h3>Por Favor Ingrese los siguientes Datos para completar su Ticket</h3>
+
+        <fieldset>
+            <legend><h3>Datos de Facturacion</h3></legend>
+            <p>Tipo de Identificacion</p> <select name="identificacion">
+                <option value="Tarjeta de identida">TI</option>
+                <option value="Cedula de ciudadania">CC</option>
+                <option value="Pasaporte">Pasaporte</option>
+                <option value="Cedula de extrangeria">CE</option>
+                <label>Numero de Identificacion:<br /><input type="text" name="Numero de identificacion"></label><br />
+                <label>Nombres y Apellidos:<br /><input type="text" name="Nombres y apellidos"></label><br /> 
+                <label>Correo Electronico:<br /><input type="text" name="Correo"></label><br />
+                <label>Direccion:<br /><input type="text" name="Direccion"><br />Telefono:<br /><input type="text" name="Telefono"></label><br />
+
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend><h3>Datos del Pasajero</h3></legend>
+            <p>Por Favor, Seleccionar:
+                <input type="radio" name="Rango" value="Adulto" checked="checked"/> Adulto
+                <input type="radio" name="Rango" value="Niño"/> Niño <br/> 
+
+               Mismos datos de Facturacion? <br/>
+               <input type="radio" name="Seleccion" value="Si" checked="checked"/> Si
+               <input type="radio" name="Seleccion" value="No"/> No</p>
+               
+            <p>Genero:<select name="Genero"> 
+                <option value="Masculino">M</option>
+                <option value="Femenino">F</option></p>
+            </select>
+
+            <label for="username">Fecha de Nacimiento</label> 
+            <input type="date" name="Fecha"/><br/>
+            <label>Nacionalidad:<input type="text" name="Nacionalidad"></label> <br/>
+
+            <p>Seleccione Aerolinea de Viaje:</p>
+            <input type="radio" name="Aerolinea" value="Avianca" checked="checked"/>
+            <input type="image" src="./images/Avianca.jpg" width="100" height="80" /> 
+            <input type="radio" name="Aerolinea" value="Latam"/>
+            <input type="image" src="./images/Latam.jpg" width="100" height="80"/>
+            <input type="radio" name="Aerolinea" value="Viva Air"/>
+            <input type="image" src="./images/VivaAir.jpg" width="100" height="80"/>
+            <input type="radio" name="Aerolinea" value="Lan"/>
+            <input type="image" src="./images/Lan.png" width="100" height="80"/><br/>   
+
+            <p>Sericios Adicionales:</p><br/>
+            <input type="checkbox" name="servicio" value="Assist card"/>Assist card 
+            <input type="checkbox" name="servicio" value="Seguro contra accidente"/>Seguro contra accidente
+            <input type="checkbox" name="servicio" value="Seguro cancelacion de viaje"/>Seguro de Viaje
+
+
+
+            <p>Seleccione Asiento:</p>
+            <select name="Asiento" size="2" multiple="multiple">
+                <option value="Ventana">Ventana</option>
+                <option value="Pasillo">Pasillo</option> 
+            </select><br/>
+            <br/><input type="submit" value="Aceptar"/>
+
+        </fieldset>\
+
+
+
+
+
+        </form>
+    </body>
+</html>
